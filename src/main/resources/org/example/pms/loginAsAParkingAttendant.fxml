@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #0D1824;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pms.loginAsAParkingAttendant">
+   <children>
+      <Label layoutX="219.0" layoutY="169.0" prefHeight="63.0" prefWidth="563.0" text="If you are a new employer, press sign up button." textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="198.0" layoutY="333.0" mnemonicParsing="false" onAction="#newEmployer" prefHeight="74.0" prefWidth="182.0" style="-fx-background-color: #fcde00; -fx-border-radius: 25px;" text="Sign up">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="630.0" layoutY="333.0" mnemonicParsing="false" onAction="#existingEmployer" prefHeight="74.0" prefWidth="182.0" style="-fx-background-color: #fcde00; -fx-border-radius: 25px;" text="Log in">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="419.0" layoutY="688.0" mnemonicParsing="false" onAction="#loginPage" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #8ac354; -fx-border-radius: 25px;" text="Go back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

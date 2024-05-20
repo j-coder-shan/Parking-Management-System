@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pms.overView">
+   <children>
+      <SplitPane prefHeight="800.0" prefWidth="300.0" style="-fx-background-color: #040720;">
+         <items>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="184.0" prefWidth="298.0">
+                     <children>
+                        <Label prefHeight="98.0" prefWidth="73.0" />
+                        <ImageView fitHeight="149.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@white.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="51.0" prefWidth="291.0" />
+                  <Button layoutX="10.0" layoutY="310.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #040720; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-background-color: #808000;" text="    Over View" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@headquartes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="210.0" mnemonicParsing="false" onAction="#login" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #040720; -fx-border-color: white; -fx-border-width: 0 0 2 0;" text="     Logging" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@loging.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="310.0" mnemonicParsing="false" onAction="#Contact" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #040720; -fx-border-color: white; -fx-border-width: 0 0 2 0;" text="    Contact" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cantact.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="300.0" prefHeight="800.0" prefWidth="700.0" style="-fx-background-color: #000000;">
+         <items>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="10.0" layoutY="100.0" prefHeight="150.0" prefWidth="698.0" text="     Over View" textFill="#dcdd78">
+                     <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="698.0" text="   Welcome to our state-of-the-art Parking Management Software," textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="160.0" prefHeight="40.0" prefWidth="695.0" text="   designed to simplify and enhance your parking experience. Our " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="224.0" prefHeight="40.0" prefWidth="695.0" text="   software is meticulously crafted to address the challenges of " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="288.0" prefHeight="40.0" prefWidth="695.0" text="   modern parking facilities, offering convenience, efficiency, and " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="352.0" prefHeight="40.0" prefWidth="695.0" text="   peace of mind to our valued customers like you." textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="320.0" prefHeight="6.0" prefWidth="695.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="416.0" prefHeight="40.0" prefWidth="695.0" text="   In today's bustling urban environments, finding convenient and" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="480.0" prefHeight="40.0" prefWidth="695.0" text="   secure parking can be a daunting task. With our Parking " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="544.0" prefHeight="40.0" prefWidth="695.0" text="   Management Software, we aim to revolutionize the way you park " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="608.0" prefHeight="40.0" prefWidth="695.0" text="   by providing intuitive solutions that streamline the entire process " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="672.0" prefHeight="40.0" prefWidth="695.0" text="   from start to finish." textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

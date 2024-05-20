@@ -1,0 +1,28 @@
+License Plate Number: 2002
+Vehicle Type: car
+Entry Time: 2024-02-08 21:39:06
+
+License Plate Number: 2002
+Vehicle Type: car
+Entry Time: 2024-02-08 21:42:40
+
+License Plate Number: 2002
+Vehicle Type: car
+Entry Time: 2024-02-08 21:42:44
+
+License Plate Number: 2002
+Vehicle Type: car
+Entry Time: 2024-02-08 21:42:44
+
+License Plate Number: 2002
+Vehicle Type: car
+Entry Time: 2024-02-08 21:44:36
+
+License Plate Number: 2002
+Vehicle Type: car
+Entry Time: 2024-02-08 21:44:41
+
+License Plate Number: 2002
+Vehicle Type: car
+Entry Time: 2024-02-08 21:46:06
+

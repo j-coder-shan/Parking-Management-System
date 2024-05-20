@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #14242B; -fx-border-color: white; -fx-border-width: 5;" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pms.removeVehiclePA">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="56.0" prefWidth="301.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="301.0" text="      License Plate No            :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="66.0" prefHeight="56.0" prefWidth="301.0" text="      Arrival Time                   :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="122.0" prefHeight="56.0" prefWidth="301.0" text="      Departure Time             :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="178.0" prefHeight="56.0" prefWidth="301.0" text="      Time  Spent                   :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="234.0" prefHeight="56.0" prefWidth="301.0" text="      Total Payment               :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="56.0" prefWidth="301.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="plate" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="301.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arrival" layoutX="10.0" layoutY="66.0" prefHeight="56.0" prefWidth="301.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departure" layoutX="10.0" layoutY="122.0" prefHeight="56.0" prefWidth="301.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeSpent" layoutX="10.0" layoutY="178.0" prefHeight="56.0" prefWidth="301.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pay" layoutX="10.0" layoutY="234.0" prefHeight="56.0" prefWidth="301.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

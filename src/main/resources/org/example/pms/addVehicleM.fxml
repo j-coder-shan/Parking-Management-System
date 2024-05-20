@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pms.addVehicleM">
+   <children>
+      <BorderPane fx:id="bp" prefHeight="800.0" prefWidth="1000.0">
+         <left>
+            <VBox prefHeight="649.0" prefWidth="257.0" style="-fx-background-color: #0D1824;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="257.0" style="-fx-background-color: #808000; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-border-style: hidden hidden solid hidden;" text="     Add Vehicle" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-add-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#removeVehicleM" prefHeight="77.0" prefWidth="257.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-border-style: hidden hidden solid hidden;" text="     Remove Vehicle" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-remove-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#parkingStatusM" prefHeight="77.0" prefWidth="257.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-border-style: hidden hidden solid hidden;" text="     Parking Status" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@overview.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#previousDetailsM" prefHeight="77.0" prefWidth="257.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-border-style: hidden hidden solid hidden;" text="View Previous Details" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-graph-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="241.0" mnemonicParsing="false" onAction="#logout" prefHeight="77.0" prefWidth="257.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-border-style: hidden hidden solid hidden;" text="       Log out" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-log-out-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="318.0" mnemonicParsing="false" prefHeight="265.0" prefWidth="257.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 2 0; -fx-border-style: hidden hidden solid hidden;" text="The Manager" textFill="#433c3c">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="ap" prefHeight="649.0" prefWidth="755.0" style="-fx-background-color: #14242B;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="licensePlateNumberField" layoutX="153.0" layoutY="97.0" prefHeight="53.0" prefWidth="423.0" />
+                  <TextField fx:id="vehicleTypeField" layoutX="153.0" layoutY="224.0" prefHeight="53.0" prefWidth="423.0" />
+                  <Label fx:id="messageLabel" layoutX="143.0" layoutY="401.0" prefHeight="27.0" prefWidth="442.0" textFill="#686868" />
+                  <Button layoutX="524.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="26.0" prefWidth="49.0" style="-fx-background-color: #ffd864;" text="Add" />
+                  <Label layoutX="163.0" layoutY="56.0" prefHeight="37.0" prefWidth="295.0" text="license Plate Number :" textFill="#686868">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="163.0" layoutY="187.0" prefHeight="37.0" prefWidth="295.0" text="Vehicle Type:" textFill="#686868">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </center>
+         <top>
+            <HBox prefHeight="151.0" prefWidth="1000.0" style="-fx-background-color: #14242B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="132.0" prefWidth="38.0" />
+                  <ImageView fitHeight="139.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@white.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="133.0" prefWidth="829.0" text="          Auto Park PVT(LTD)" textFill="#e4b4b4">
+                     <font>
+                        <Font size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
